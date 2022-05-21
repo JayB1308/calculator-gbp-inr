@@ -43,3 +43,16 @@ body{
   font-size: 1rem;
   border-radius: 0.5rem;
 }
+
+@media (max-width:415px) and (min-width:350px)
+{
+  .header{
+    height: 3rem;
+  }
+  .header img{
+    width: 50%;
+  }
+  .form-container{
+    width: 100%;
+  }
+} 

@@ -5,12 +5,10 @@ const Form = () => {
   const [send,setSend] = useState(0);
   const [recieve,setRecieve] = useState(0);
 
-  const handleRecieve = () => {
-    let recieve_amount = send/97.09;
-    console.log(recieve_amount);
-    setRecieve(recieve_amount);
+  const handleRecieve = (e) => {
+    setSend(e.target.value);
+    setRecieve(e.target.value/(97.09));
   }
-
 
   return (
     <div className="form">
@@ -23,8 +21,7 @@ const Form = () => {
                 <label>You send</label>
                 <input type="number" value={send}
                 onChange = {(e) => {
-                  setSend(e.target.value);
-                  handleRecieve();
+                  handleRecieve(e);
                 }}/>
             </div>
             <div className="form-select">
