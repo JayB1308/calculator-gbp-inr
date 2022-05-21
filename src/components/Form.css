@@ -1,0 +1,101 @@
+.form{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+label{
+    font-size: 0.75rem;
+}
+
+input{
+    border: none;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+
+.form-group
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(226,232,240,0.9);
+    width: 20rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+.form-group label{
+    background-color: transparent;
+    font-family: sans-serif;
+    color:gray;
+    padding: 0.25rem;
+}
+.form-group input{
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.currency-fields{
+    display: flex;
+    gap:-2rem;
+    width: 22rem;
+    background-color: rgba(226,232,240,0.9);
+    border-radius: 0.5rem;
+}
+
+.currency-fields .form-group-2{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    width: 70%;
+}
+.currency-fields .form-group-2 label{
+    background-color: transparent;
+    font-family: sans-serif;
+    color:gray;
+    padding: 0.25rem;
+}
+.currency-fields .form-group-2 input{
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.currency-fields .form-select{
+    width: 30%;
+    border-left: 3px solid black;
+}
+
+.currency-fields .form-select select{
+    font-size: 1rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 100%;
+    padding-left: 1rem;
+}
+
+table{
+    width:100%;
+    font-size: 1.05rem;
+}
+
+td{
+    padding: 0.5rem;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.grey-line{
+    background-color:rgba(148,163,184,0.6);
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
